@@ -7,8 +7,8 @@
 | 序号 | 编号 | 题目名称                                   | 思路                                                         | 类型           | 难度 | 时间消耗 | 地址                                                         |
 | ---- | ---- | ------------------------------------------ | ------------------------------------------------------------ | -------------- | ---- | -------- | ------------------------------------------------------------ |
 | 1    | 109  | Convert  Sorted List to Binary Search Tree |                                                              | BST            | M    | 1h       | [link](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |
-| 2    | 653  | Two  Sum IV - Input is a BST               |                                                              | BST            | E    | 1h       |                                                              |
-| 3    | 530  | Minimum Absolute Difference in BST         |                                                              | BST            | E    | 25m      |                                                              |
+| 2    | 653  | Two  Sum IV - Input is a BST               | BFS，遍历每个节点，hash保存查找目标值 | BST            | E    | 1h       | [link](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) |
+| 3    | 530  | Minimum Absolute Difference in BST         |                                                              | BST            | E    | 25m      | [link](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) |
 | 4    | 501  | Find Mode in Binary Search Tree            | 全局记录特殊值(最大的统计数字)；inorder遍历树，不断把当前统计到的最大元素更新 | BST            | E    | 1h       | [link](https://leetcode.com/problems/find-mode-in-binary-search-tree/) |
 | 5    | 208  | Implement Trie  (Prefix Tree)              | 关键在于单个节点如何定义                                     | Trie           | M    | 30m      | [link](https://leetcode.com/problems/implement-trie-prefix-tree/) |
 | 6    | 677  | Map  Sum Pairs                             |                                                              | Trie           | M    | 30m      | [link](https://leetcode.com/problems/map-sum-pairs/)         |
@@ -26,5 +26,5 @@
 | 18   | 2    | Add  Two Numbers                           |                                                              | Linked List    | M    | 50m      | [link](https://leetcode.com/problems/add-two-numbers/)       |
 | 19   | 485  | Max  Consecutive Ones                      | 太简单了，就当练习语言编程                                   | Array & Matrix | E    | 10m      |                                                              |
 | 20   | 245  | Search  a 2D Matrix II                     | 从右顶点开始判断，如果当前数大于目标数则向左查找，如果当前数小于目标数则向下查找。在一个循环内就可以判断是否含有制定参数 | Array & Matrix | M    | null     | [link](https://leetcode.com/problems/search-a-2d-matrix-ii/) |
-| 21   | 378  | Kth Smallest Element in a Sorted Matrix    | 1. 使用优先队列保存所有的元素，顺序从大到小；                | Array & Matrix | M    | 28       | [link](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) |
+| 21   | 378  | Kth Smallest Element in a Sorted Matrix    | 1. 使用优先队列保存所有的元素，顺序从大到小；                | Array & Matrix | M    | 28m       | [link](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) |
 
