@@ -23,7 +23,7 @@ public class KthSmallestElement {
     }
     */
 
-    // 方式二： 使用二分查找
+    // 方式二： 使用二分查找 Time Complexity O(n*m*log(n+m))
     public int kthSmallest(int[][] matrix, int k) {
         int m = matrix.length;
         int n = matrix[0].length;
