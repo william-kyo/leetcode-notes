@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SetMismatch {
+    // 方式一
+    /*
     public int[] findErrorNums(int[] nums) {
         int[] ret = new int[2];
         if(nums==null||nums.length==0){
@@ -22,6 +24,32 @@ public class SetMismatch {
 
         for(int i=0; i<nums.length; i++){
             if(!map.containsKey(i+1)){
+                ret[1] = i+1;
+            }
+        }
+        return ret;
+    }
+    */
+
+    // 方式二
+    public int[] findErrorNums(int[] nums) {
+        int[] ret = new int[2];
+        if(nums==null||nums.length==0){
+            return ret;
+        }
+        int[] helper = new int[nums.length];
+        // find the repeated number
+        for(int i=0; i<nums.length; i++){
+            if(helper[nums[i]-1]<0){
+                ret[0] = Math.abs(helper[nums[i]-1]);
+            }
+            helper[nums[i]-1] = -nums[i];
+
+        }
+
+        // find the missing number
+        for(int i=0; i<nums.length; i++){
+            if(helper[i]==0){
                 ret[1] = i+1;
             }
         }

@@ -27,5 +27,5 @@
 | 19   | 485  | Max  Consecutive Ones                      | 太简单了，就当练习语言编程                                   | Array & Matrix | E    | 10m      |                                                              |
 | 20   | 245  | Search  a 2D Matrix II                     | 从右顶点开始判断，如果当前数大于目标数则向左查找，如果当前数小于目标数则向下查找。在一个循环内就可以判断是否含有制定参数 | Array & Matrix | M    | null     | [link](https://leetcode.com/problems/search-a-2d-matrix-ii/) |
 | 21   | 378  | Kth Smallest Element in a Sorted Matrix    | 方式一： 使用优先队列保存所有的元素，顺序从大到小； 方式二： 使用二分查找，左上角为最小，右下角为最大，使用范围查找确定中间值；统计范围中比中间值小的个数，对比是否大于目标k来判断左右选取范围。Time Complexity: O(log(n)) | Array & Matrix | M    | 28m       | [link](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) |
-| 22 | 645 | Set Mismatch | 方式一： Brutal Force，使用hash表统计每个数字的个数，个数为2的是出现异常的数字，遍历 1->n ，如果map不存在的就是缺失的数字。Time Complexity: O(n), Space Complexity: O(n) | Array & Matrix | E | 30m | [link](https://leetcode.com/problems/set-mismatch/) |
+| 22 | 645 | Set Mismatch | 方式一： Brutal Force，使用hash表统计每个数字的个数，个数为2的是出现异常的数字，遍历 1->n ，如果map不存在的就是缺失的数字。Time Complexity: O(n), Space Complexity: O(n). 方式二：使用一个新的数组保存排序排序后数字，第一次遍历转移数字，保存的数字赋值为负数，如果一个位置已经有负数，则这个数字为重复；第二次便利新数组，判断为0的数字为缺失的数字index+1。Time Complexity: O(n), Space: O(n)。相比方式一优化体现在常数级别 | Array & Matrix | E | 30m | [link](https://leetcode.com/problems/set-mismatch/) |
 
