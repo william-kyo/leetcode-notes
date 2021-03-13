@@ -1,4 +1,4 @@
-package dfs;
+package search.dfs;
 
 import org.junit.Assert;
 
