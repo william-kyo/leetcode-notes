@@ -64,9 +64,6 @@ public class CourseSchedule {
         marked = new boolean[numCourses];
         onstack = new boolean[numCourses];
         for(int i=0; i<numCourses; i++){
-            if(marked[i]){
-                continue;
-            }
             if(acyclic(adjacent,i)){
                 return false;
             }

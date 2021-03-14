@@ -6,7 +6,7 @@
 
 TODO List:
 
-190, 131, 37, 51, 667, 785, 207, 210, 684, 667, 17, 547, 279, 200, 287, 46, 39, 40,257,695, 127, 547, 130, 417, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
+190, 131, 37, 51, 667, 785, 210, 684, 667, 17, 547, 279, 200, 287, 46, 39, 40,257,695, 127, 547, 130, 417, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
 
 
 
@@ -36,4 +36,5 @@ TODO List:
 | 22 | 645 | Set Mismatch | 方式一： Brutal Force，使用hash表统计每个数字的个数，个数为2的是出现异常的数字，遍历 1->n ，如果map不存在的就是缺失的数字。Time Complexity: O(n), Space Complexity: O(n). 方式二：使用一个新的数组保存排序排序后数字，第一次遍历转移数字，保存的数字赋值为负数，如果一个位置已经有负数，则这个数字为重复；第二次便利新数组，判断为0的数字为缺失的数字index+1。Time Complexity: O(n), Space: O(n)。相比方式一优化体现在常数级别 | Array & Matrix | E | 30m | [link](https://leetcode.com/problems/set-mismatch/) |
 | 23 | 1091 | Shortest Path in Binary Matrix | BFS | Array & Matrix | M | null | [link](https://leetcode.com/problems/shortest-path-in-binary-matrix/) |
 | 24 | 442 | Find All Duplicates in an Array | 记录数组中每个元素映射到index进行标记，已经标记的index就是重复的数字。一次 遍历就可以搜索出所有 O(n)。难点在于空间复杂度的优化 | Array & Matrix | M | 25m | [link](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |
+| 25 | 207 | Course Schedule | 课程有有序问题，可以转换为有向图，判断这个图是否存在循环acycle。可以使用dfs或者bfs | Search | M | null | [link](https://leetcode.com/problems/course-schedule/) |
 
