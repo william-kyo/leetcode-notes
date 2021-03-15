@@ -37,4 +37,5 @@ TODO List:
 | 23 | 1091 | Shortest Path in Binary Matrix | BFS | Array & Matrix | M | null | [link](https://leetcode.com/problems/shortest-path-in-binary-matrix/) |
 | 24 | 442 | Find All Duplicates in an Array | 记录数组中每个元素映射到index进行标记，已经标记的index就是重复的数字。一次 遍历就可以搜索出所有 O(n)。难点在于空间复杂度的优化 | Array & Matrix | M | 25m | [link](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |
 | 25 | 207 | Course Schedule | 课程有有序问题，可以转换为有向图，判断这个图是否存在循环acycle。可以使用dfs或者bfs | Search | M | null | [link](https://leetcode.com/problems/course-schedule/) |
+| 26 | 417 | Pacific Alantic Water Flow |  | Search | M | 90m | [link](https://leetcode.com/problems/pacific-atlantic-water-flow/) |
 
