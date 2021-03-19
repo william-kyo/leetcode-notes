@@ -29,6 +29,14 @@ public class RedundantConnection {
         return ret;
     }
 
+    /**
+     * 判断 u->v是否可达
+     * @param edgeTo 已经遍历的边集合
+     * @param u from
+     * @param v to
+     * @param pre 当前正在校验的节点，避免死循环
+     * @return true or false
+     */
     private boolean dfs(List<Integer>[] edgeTo, int u, int v, int pre) {
         if (u == v) {
             return true;

@@ -38,5 +38,5 @@ TODO List:
 | 24 | 442 | Find All Duplicates in an Array | 记录数组中每个元素映射到index进行标记，已经标记的index就是重复的数字。一次 遍历就可以搜索出所有 O(n)。难点在于空间复杂度的优化 | Array & Matrix | M | 25m | [link](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |
 | 25 | 207 | Course Schedule | 课程有序问题，可以转换为有向图，判断这个图是否存在循环acycle。可以使用dfs或者bfs | Search | M | null | [link](https://leetcode.com/problems/course-schedule/) |
 | 26 | 417 | Pacific Alantic Water Flow | 分别计算Pacific、Alantic可达的方块，最后统计两边都可达的方块；4个移动方向 bfs遍历可达 | Search | M | 90m | [link](https://leetcode.com/problems/pacific-atlantic-water-flow/) |
-| 27 | 684 | Redundant Connection | 方式一： 遍历所有的边(edge)，判断当前是否已经可达(u->v)，如果不可达则添加的连接列表；使用dfs判断是否可达 | Search | M | null | [link](https://leetcode.com/problems/redundant-connection/) |
+| 27 | 684 | Redundant Connection | 方式一： 遍历所有的边(edge)，判断当前是否已经可达(u->v)，如果不可达则添加的连接列表；使用dfs判断是否可达. 方式二： 使用Union Find(Algorithms chapter 1)，树的思想，Time Complexity O(n*log(n)), Space O(n) | Search | M | null | [link](https://leetcode.com/problems/redundant-connection/) |
 
