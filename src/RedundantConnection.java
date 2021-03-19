@@ -36,7 +36,7 @@ public class RedundantConnection {
 
     public static void main(String[] args) {
         int[][] edges = new int[][]{{1, 2}, {2, 3}, {3, 4}, {1, 4}, {1, 5}};
-        search.dfs.RedundantConnection rc = new search.dfs.RedundantConnection();
+        RedundantConnection rc = new RedundantConnection();
         int[] expected = new int[]{1, 4};
         int[] actual = rc.findRedundantConnection(edges);
         Assert.assertArrayEquals(expected, actual);
