@@ -6,7 +6,7 @@
 
 TODO List:
 
-190, 37, 667, 785, 210, 667,  547, 279, 200, 287, 46, 39, 40,257,695, 127, 547, 130, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
+190, 37, 667, 785, 210, 667,  547, 279, 287, 46, 39, 40,257,695, 127, 547, 130, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
 
 
 
@@ -42,4 +42,5 @@ TODO List:
 | 28 | 131 | Palindrome Partition | 在一个字符串里面把所有可能的结果都列举出来，常见的算法有DP和DFS/BFS。这里使用DFS，preorder列举符合回文序列的子字符；最困难的点在于想清楚如何编排遍历的顺序，这里可以画树状图分析。 | Search | M | null | [link](https://leetcode.com/problems/palindrome-partitioning/) |
 | 29 | 51 | N Queens | 回溯算法三步：choice, constraint, goal。 | Backtracking | H | null | [link](https://leetcode.com/problems/n-queens/) |
 | 30 | 17 | Letter Combinations of Phone Number | 几乎没有限制条件，把所有的可能结果穷举出来。 | Bactracking | M | 39m | [letter combinations](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |
+| 31 | 200 | Number of Islands | Union find 把二维数组转换为一维数组，记录union find；四个方向的查询可以使用二维数字计算 | Union Find | M | 1h | [number-of-islands](https://leetcode.com/problems/number-of-islands/) |
 
