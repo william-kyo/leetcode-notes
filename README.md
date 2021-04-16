@@ -6,7 +6,7 @@
 
 TODO List:
 
-190, 37, 667, 785, 210, 667,  547, 279, 287, 46, 39, 40,257,695, 127, 547, 130, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
+190, 37, 785, 210,  547, 279, 287, 46, 39, 40,257,695, 127, 547, 130, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
 
 
 
@@ -27,9 +27,9 @@ TODO List:
 | 13   | 9    | Palindrome  number                         |                                                              | String         | E    | 25m      | [link](https://leetcode.com/problems/palindrome-number/)     |
 | 14   | 696  | Count  Binary Substrings                   | 利用中位向外扩展统计，前后指针向两边移动，确保两指针指向的字符不想等，并且同一个方向的字符要相等 | String         | E    | 25m      | [link](https://leetcode.com/problems/count-binary-substrings/) |
 | 15   | 283  | Move  Zeroes                               | 简单的题目要控制在15m以内完成，开始浪费太多时间在尝试用快排解决，其实这道题用brutal  force就效率很高了 | Array & Matrix | E    | 25m      | [link](https://leetcode.com/problems/move-zeroes/)           |
-| 16   | 566  | Reshape  the Matrix                        | brutal  force分析二维数组的i，j的相对关系                    | Array & Matrix | E    | 30m      | [link](https://leetcode.com/problems/reshape-the-matrix/)    |
+| 16   | 566  | Reshape  the Matrix                        | brutal  force分析二维数组的i，j的相对关系                    | Array | E    | 30m      | [link](https://leetcode.com/problems/reshape-the-matrix/)    |
 | 17   | 141  | Linked  List Cycle                         | 快慢指针可以重叠，边界控制                                   | Linked List    | E    | 15m      | [link](https://leetcode.com/problems/linked-list-cycle/)     |
-| 18   | 2    | Add  Two Numbers                           |                                                              | Linked List    | M    | 50m      | [link](https://leetcode.com/problems/add-two-numbers/)       |
+| 18   | 2    | Add  Two Numbers                           | 方式一：遍历链表节点；方式二：利用LIFO的特性使用栈实现构造 | Linked List    | M    | 50m      | [link](https://leetcode.com/problems/add-two-numbers/)       |
 | 19   | 485  | Max  Consecutive Ones                      | 太简单了，就当练习语言编程                                   | Array & Matrix | E    | 10m      |                                                              |
 | 20   | 245  | Search  a 2D Matrix II                     | 从右顶点开始判断，如果当前数大于目标数则向左查找，如果当前数小于目标数则向下查找。在一个循环内就可以判断是否含有制定参数 | Array & Matrix | M    | null     | [link](https://leetcode.com/problems/search-a-2d-matrix-ii/) |
 | 21   | 378  | Kth Smallest Element in a Sorted Matrix    | 方式一： 使用优先队列保存所有的元素，顺序从大到小； 方式二： 使用二分查找，左上角为最小，右下角为最大，使用范围查找确定中间值；统计范围中比中间值小的个数，对比是否大于目标k来判断左右选取范围。Time Complexity: O(log(n)) | Array & Matrix | M    | 28m       | [link](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) |
@@ -43,4 +43,5 @@ TODO List:
 | 29 | 51 | N Queens | 回溯算法三步：choice, constraint, goal。 | Backtracking | H | null | [link](https://leetcode.com/problems/n-queens/) |
 | 30 | 17 | Letter Combinations of Phone Number | 几乎没有限制条件，把所有的可能结果穷举出来。 | Bactracking | M | 39m | [letter combinations](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |
 | 31 | 200 | Number of Islands | Union find 把二维数组转换为一维数组，记录union find；四个方向的查询可以使用二维数字计算 | Union Find | M | 1h | [number-of-islands](https://leetcode.com/problems/number-of-islands/) |
+| 32 | 667 | Beautiful Arrangement II | 首尾向中靠拢，构造摆动 | Array | M | null | [beautiful arrangement](https://leetcode.com/problems/beautiful-arrangement-ii/) |
 
