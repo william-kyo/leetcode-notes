@@ -1,12 +1,12 @@
 # LeetCode Notes
 
-算法是不可能在短时间就能突破的，只有持续不断的练习、思考。一开始我是畏惧刷题的，觉得刷题是“做题家”的行为，不够cool，这个错误的观点让我一直无法提高算法的功底。我工作的前三年就学完了常见的数据结构和算法，水平也仅仅是能够说出算法和数据结构的名字、使用场景。后来我发现“鄙视刷题”只是我的Imposter Syndrome，算法并不是要求我要去发明新的理论，而是需要去理解、练习。刷题就是一种高效率的学习方式
+算法是不可能在短时间就能突破的，只有持续不断的练习、思考。一开始我是不想刷题的，觉得刷题是“做题家”的行为，不够cool，这个错误的观点让我一直无法提高算法的功底。我工作的前三年就学完了常见的数据结构和算法，水平也仅仅是能够说出算法和数据结构的名字、使用场景。后来我发现“鄙视刷题”只是我的Imposter Syndrome，算法并不是要求我要去发明新的东西，而是需要去理解、练习。刷题就是一种高效率的学习方式
 
 
 
 TODO List:
 
-190, 37, 785, 210,  547, 279, 287, 46, 39, 40,257,695, 127, 547, 130, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
+190, 37, 785, 210,  547, 279, 287, 46, 39, 40,257,695, 127, 547, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
 
 
 
@@ -44,4 +44,5 @@ TODO List:
 | 30 | 17 | Letter Combinations of Phone Number | 几乎没有限制条件，把所有的可能结果穷举出来。 | Bactracking | M | 39m | [letter combinations](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |
 | 31 | 200 | Number of Islands | Union find 把二维数组转换为一维数组，记录union find；四个方向的查询可以使用二维数字计算 | Union Find | M | 1h | [number-of-islands](https://leetcode.com/problems/number-of-islands/) |
 | 32 | 667 | Beautiful Arrangement II | 首尾向中靠拢，构造摆动 | Array | M | null | [beautiful arrangement](https://leetcode.com/problems/beautiful-arrangement-ii/) |
+| 33 | 130 | Surrounded Region | 1.遍历所有边界上的region并加入queue；2.BFS queue弹出一个节点，标记，检查四个方向是否有region ，有的话就加入queue； 3.知道queue为空，检查所有的region，如果没有被标记的话就是可以flip的 | BFS | M | 40m | [surrounded region](https://leetcode.com/problems/surrounded-regions/submissions/) |
 
