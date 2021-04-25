@@ -6,7 +6,7 @@
 
 TODO List:
 
-190, 37, 785, 210,  547, 279, 287, 46, 39, 40,257,695, 127, 547, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
+190, 37, 785,  547, 279, 287, 46, 39, 40,257,695, 127, 547, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
 
 
 
@@ -45,4 +45,5 @@ TODO List:
 | 31 | 200 | Number of Islands | Union find 把二维数组转换为一维数组，记录union find；四个方向的查询可以使用二维数字计算 | Union Find | M | 1h | [number-of-islands](https://leetcode.com/problems/number-of-islands/) |
 | 32 | 667 | Beautiful Arrangement II | 首尾向中靠拢，构造摆动 | Array | M | null | [beautiful arrangement](https://leetcode.com/problems/beautiful-arrangement-ii/) |
 | 33 | 130 | Surrounded Region | 1.遍历所有边界上的region并加入queue；2.BFS queue弹出一个节点，标记，检查四个方向是否有region ，有的话就加入queue； 3.知道queue为空，检查所有的region，如果没有被标记的话就是可以flip的 | BFS | M | 40m | [surrounded region](https://leetcode.com/problems/surrounded-regions/submissions/) |
+| 34 | 210 | Course Schedule II |  | DFS | M | 1.5h | [course schedule II](https://leetcode.com/problems/course-schedule-ii/) |
 
