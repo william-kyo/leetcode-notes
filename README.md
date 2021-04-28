@@ -6,7 +6,7 @@
 
 TODO List:
 
-190, 37, 785,  547, 279, 287, 46, 39, 40,257,695, 127, 547, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
+190, 37, 785,  547, 279, 287, 46, 39, 257,695, 127, 547, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
 
 
 
@@ -40,10 +40,11 @@ TODO List:
 | 26 | 417 | Pacific Alantic Water Flow | 分别计算Pacific、Alantic可达的方块，最后统计两边都可达的方块；4个移动方向 bfs遍历可达 | Search | M | 90m | [link](https://leetcode.com/problems/pacific-atlantic-water-flow/) |
 | 27 | 684 | Redundant Connection | 方式一： 遍历所有的边(edge)，判断当前是否已经可达(u->v)，如果不可达则添加的连接列表；使用dfs判断是否可达. 方式二： 使用Union Find(Algorithms chapter 1)，树的思想，Time Complexity O(n*log(n)), Space O(n) | Search | M | null | [link](https://leetcode.com/problems/redundant-connection/) |
 | 28 | 131 | Palindrome Partition | 在一个字符串里面把所有可能的结果都列举出来，常见的算法有DP和DFS/BFS。这里使用DFS，preorder列举符合回文序列的子字符；最困难的点在于想清楚如何编排遍历的顺序，这里可以画树状图分析。 | Search | M | null | [link](https://leetcode.com/problems/palindrome-partitioning/) |
-| 29 | 51 | N Queens | 回溯算法三步：choice, constraint, goal。 | Backtracking | H | null | [link](https://leetcode.com/problems/n-queens/) |
+| 29 | 51 | N Queens | 回溯算法三步：choice: where to place a queen; constraint: each queean can't attack each other(same row, same column, same diagonal); goal: N queens placed。 | Backtracking | H | null | [n queens](https://leetcode.com/problems/n-queens/) |
 | 30 | 17 | Letter Combinations of Phone Number | 几乎没有限制条件，把所有的可能结果穷举出来。 | Bactracking | M | 39m | [letter combinations](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |
 | 31 | 200 | Number of Islands | Union find 把二维数组转换为一维数组，记录union find；四个方向的查询可以使用二维数字计算 | Union Find | M | 1h | [number-of-islands](https://leetcode.com/problems/number-of-islands/) |
 | 32 | 667 | Beautiful Arrangement II | 首尾向中靠拢，构造摆动 | Array | M | null | [beautiful arrangement](https://leetcode.com/problems/beautiful-arrangement-ii/) |
 | 33 | 130 | Surrounded Region | 1.遍历所有边界上的region并加入queue；2.BFS queue弹出一个节点，标记，检查四个方向是否有region ，有的话就加入queue； 3.知道queue为空，检查所有的region，如果没有被标记的话就是可以flip的 | BFS | M | 40m | [surrounded region](https://leetcode.com/problems/surrounded-regions/submissions/) |
 | 34 | 210 | Course Schedule II | 1.DFS-后置遍历，同时检查是否有循环 | DFS | M | 1.5h | [course schedule II](https://leetcode.com/problems/course-schedule-ii/) |
+| 35 | 40 |  |  |  |  |  |  |
 
