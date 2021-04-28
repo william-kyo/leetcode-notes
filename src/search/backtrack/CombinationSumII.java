@@ -1,23 +1,20 @@
 package search.backtrack;
 
+import org.junit.Assert;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        Arrays.sort(candidates);
         List<List<Integer>> ret = new ArrayList<>();
         List<Integer> list = new ArrayList<>();
         backtracking(candidates, 0, target, list, ret);
-        // remove duplicate list
-        List<List<Integer>> result = new ArrayList<>();
-        for (List<Integer> l : ret) {
-            List<Integer> newList = l.stream().sorted().collect(Collectors.toList());
-            if (!result.contains(newList)) {
-                result.add(newList);
-            }
-        }
-        return result;
+        return ret;
     }
 
     private void backtracking(int[] candidates, int index, int target, List<Integer> list, List<List<Integer>> ret) {
@@ -26,11 +23,15 @@ public class CombinationSumII {
             ret.add(new ArrayList<>(list));
             return;
         }
+        // constraint 1: list numbers sum less than or equal to target
         if (target < 0) {
             return;
         }
         for (int i = index; i < candidates.length; i++) {
-            // constraint: list numbers sum less than or equal to target
+            // constraint 2: duplicate : list[], 1,1,2,3
+            if (i > index && candidates[i] == candidates[i - 1]) {
+                continue;
+            }
             // choice: pick current number
             list.add(candidates[i]);
             backtracking(candidates, i + 1, target - candidates[i], list, ret);
@@ -41,9 +42,17 @@ public class CombinationSumII {
     public static void main(String[] args) {
         CombinationSumII combinationSumII = new CombinationSumII();
         int[] candidates = new int[]{8, 10, 1, 2, 7, 6, 1, 5};
-        int target = 8;
+        Integer target = 8;
         List<List<Integer>> actual = combinationSumII.combinationSum2(candidates, target);
-        System.out.println(actual.size());
+        for (List<Integer> l : actual) {
+            Assert.assertEquals(target, l.stream().reduce(0, (a, b) -> a + b));
+        }
 
+        candidates = new int[]{8, 10, 1, 1, 2, 7, 6, 1, 5};
+        target = 8;
+        actual = combinationSumII.combinationSum2(candidates, target);
+        for (List<Integer> l : actual) {
+            Assert.assertEquals(target, l.stream().reduce(0, (a, b) -> a + b));
+        }
     }
 }
