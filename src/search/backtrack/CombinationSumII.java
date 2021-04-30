@@ -5,8 +5,6 @@ import org.junit.Assert;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
@@ -45,14 +43,14 @@ public class CombinationSumII {
         Integer target = 8;
         List<List<Integer>> actual = combinationSumII.combinationSum2(candidates, target);
         for (List<Integer> l : actual) {
-            Assert.assertEquals(target, l.stream().reduce(0, (a, b) -> a + b));
+            Assert.assertEquals(target, l.stream().reduce(0, Integer::sum));
         }
 
         candidates = new int[]{8, 10, 1, 1, 2, 7, 6, 1, 5};
         target = 8;
         actual = combinationSumII.combinationSum2(candidates, target);
         for (List<Integer> l : actual) {
-            Assert.assertEquals(target, l.stream().reduce(0, (a, b) -> a + b));
+            Assert.assertEquals(target, l.stream().reduce(0, Integer::sum));
         }
     }
 }
