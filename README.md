@@ -6,7 +6,7 @@
 
 TODO List:
 
-190, 37, 785,  547, 279, 287, 46, 39, 257,695, 127, 547, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565, 769
+190, 37, 785,  547, 279, 287, 46, 39, 257,695, 127, 547, 47, 216, 78, 769, 93, 79, 77, 697, 766, 565
 
 
 
@@ -46,5 +46,8 @@ TODO List:
 | 32 | 667 | Beautiful Arrangement II | 首尾向中靠拢，构造摆动 | Array | M | null | [beautiful arrangement](https://leetcode.com/problems/beautiful-arrangement-ii/) |
 | 33 | 130 | Surrounded Region | 1.遍历所有边界上的region并加入queue；2.BFS queue弹出一个节点，标记，检查四个方向是否有region ，有的话就加入queue； 3.知道queue为空，检查所有的region，如果没有被标记的话就是可以flip的 | BFS | M | 40m | [surrounded region](https://leetcode.com/problems/surrounded-regions/submissions/) |
 | 34 | 210 | Course Schedule II | 1.DFS-后置遍历，同时检查是否有循环 | DFS | M | 1.5h | [course schedule II](https://leetcode.com/problems/course-schedule-ii/) |
-| 35 | 40 | Combination Sum II |  | Bactracking | M | null | [combination sum II](https://leetcode.com/problems/combination-sum-ii/submissions/) |
+| 35 | 40 | Combination Sum II |  | Backtracking | M | null | [combination sum II](https://leetcode.com/problems/combination-sum-ii/submissions/) |
+| 36 | 46 | Permutations | 多次遍历组合，枚举所有的可能组合，符合回溯的特征。 | Backtracking | M | 2h | [permutations](https://leetcode.com/problems/permutations/) |
+| 37 | 79 | Word Search | 单纯使用DFS无法解决问题，再次体现回溯循环校验同一个位置不同结果的特性 | Backtracking | M | 2h | [word search](https://leetcode.com/problems/word-search/) |
+| 38 | 190 |  |  |  |  |  |  |
 
