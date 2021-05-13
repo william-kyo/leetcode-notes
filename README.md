@@ -49,5 +49,5 @@ TODO List:
 | 35 | 40 | Combination Sum II |  | Backtracking | M | null | [combination sum II](https://leetcode.com/problems/combination-sum-ii/submissions/) |
 | 36 | 46 | Permutations | 多次遍历组合，枚举所有的可能组合，符合回溯的特征。 | Backtracking | M | 2h | [permutations](https://leetcode.com/problems/permutations/) |
 | 37 | 79 | Word Search | 单纯使用DFS无法解决问题，再次体现回溯循环校验同一个位置不同结果的特性 | Backtracking | M | 2h | [word search](https://leetcode.com/problems/word-search/) |
-| 38 | 190 |  |  |  |  |  |  |
+| 38 | 190 | Reverse Bit | 32位数，位移、求&运算 | Bit Manipulation | E | 1h | [reverse bit](https://leetcode.com/problems/reverse-bits/submissions/) |
 
