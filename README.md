@@ -6,7 +6,7 @@
 
 TODO List:
 
-342, 693, 476, 371, 318, 338, 190, 37, 785,  547, 279, 287, 46, 39, 257,695, 127, 547, 47, 216, 78, 93, 79, 77, 697, 766, 565
+342, 693, 476, 371, 318, 338, 190, 37, 785,  547, 279, 287, 46, 39, 257, 695, 127, 547, 47, 216, 78, 93, 79, 77, 697, 766, 565
 
 
 
@@ -51,5 +51,5 @@ TODO List:
 | 37 | 79 | Word Search | 单纯使用DFS无法解决问题，再次体现回溯循环校验同一个位置不同结果的特性 | Backtracking | M | 2h | [word search](https://leetcode.com/problems/word-search/) |
 | 38 | 190 | Reverse Bit | 32位数，位移、求&运算 | Bit Manipulation | E | 1h | [reverse bit](https://leetcode.com/problems/reverse-bits/submissions/) |
 | 39 | 231 | Power Of Two |  | Bit Manipulation | E | 20m | [power of two](https://leetcode.com/problems/power-of-two/submissions/) |
-| 40 | 769 |  |  |  |  |  |  |
+| 40 | 769 | Max Chunk to Sort | 能被分成一个chunk的数组中的最大数字等于所在数字的位置index，然后再找下一个数组的切割位 | Array | M | 30m | [max chunk to sort](https://leetcode.com/problems/max-chunks-to-make-sorted/) |
 
