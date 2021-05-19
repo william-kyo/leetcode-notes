@@ -1,4 +1,4 @@
-package backtracking;
+package search.backtracking;
 
 import utils.MyArrayUtil;
 

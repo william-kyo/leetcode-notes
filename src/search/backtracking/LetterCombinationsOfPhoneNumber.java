@@ -1,4 +1,4 @@
-package search.backtrack;
+package search.backtracking;
 
 import org.junit.Assert;
 
