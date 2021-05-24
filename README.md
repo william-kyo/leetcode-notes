@@ -6,7 +6,7 @@
 
 TODO List:
 
-342, 693, 476, 371, 318, 338, 190, 37, 785,  547, 279, 287, 46, 39, 257, 695, 127, 547, 47, 216, 78, 93, 79, 77, 697, 766, 565
+342, 693, 476, 371, 318, 338, 190, 37, 785,  547, 279, 287, 257, 695, 127, 547, 216, 78, 93, 79, 77, 697, 766, 565
 
 
 
@@ -53,4 +53,5 @@ TODO List:
 | 39 | 231 | Power Of Two |  | Bit Manipulation | E | 20m | [power of two](https://leetcode.com/problems/power-of-two/submissions/) |
 | 40 | 769 | Max Chunk to Sort | 能被分成一个chunk的数组中的最大数字等于所在数字的位置index，然后再找下一个数组的切割位 | Array | M | 30m | max chunk to sort |
 | 41 | 39 | Combination Sum |  | Backtracking | M | 1h | [combination sum](https://leetcode.com/problems/combination-sum/) |
+| 42 | 47 | Permutations II |  | Backtracking | M | 25m | [permutations II](https://leetcode.com/problems/permutations-ii/) |
 
