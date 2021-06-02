@@ -6,7 +6,7 @@
 
 TODO List:
 
-342, 693, 476, 371, 318, 338, 190, 37, 785,  547, 279, 287, 257, 695, 127, 547, 216, 78, 93, 79, 77, 697, 766, 565
+72,  650, 342, 693, 476, 371, 318, 338, 190, 37, 785,  547, 279, 287, 257, 695, 127, 547, 216, 78, 93, 79, 77, 697, 766
 
 
 
@@ -54,4 +54,7 @@ TODO List:
 | 40 | 769 | Max Chunk to Sort | 能被分成一个chunk的数组中的最大数字等于所在数字的位置index，然后再找下一个数组的切割位 | Array | M | 30m | max chunk to sort |
 | 41 | 39 | Combination Sum |  | Backtracking | M | 1h | [combination sum](https://leetcode.com/problems/combination-sum/) |
 | 42 | 47 | Permutations II |  | Backtracking | M | 25m | [permutations II](https://leetcode.com/problems/permutations-ii/) |
+| 43 | 583 | Delete Operation For Two Strings |  | DP | M | 1.5h | [two strings](https://leetcode.com/problems/delete-operation-for-two-strings/) |
+| 44 | 565 | Array Nesting | Brutal Force: 贪心策略，每个元素为起点统计set长度，只保留最长的len。Time Complexity O(n^2) | Array | M | 25m | [array nesting](https://leetcode.com/problems/array-nesting/) |
+|  |  |  |  |  |  |  |  |
 
