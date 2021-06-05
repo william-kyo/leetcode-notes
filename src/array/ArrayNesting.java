@@ -9,21 +9,20 @@ public class ArrayNesting {
         }
 
         int maxSetLen = 0;
+        boolean[] marked = new boolean[nums.length];
         for(int i=0; i<nums.length; i++){
-            int currentLen = countSetLen(nums, nums[i]);
-            maxSetLen = Math.max(maxSetLen, currentLen);
+            if(!marked[i]){
+                int p = i;
+                int count = 1;
+                while(nums[p]!=i){
+                    count++;
+                    p = nums[p];
+                    marked[p] = true;
+                }
+                maxSetLen = Math.max(maxSetLen, count);
+            }
         }
         return maxSetLen;
-    }
-
-    private int countSetLen(int[] nums, int begin){
-        int count = 1;
-        int p = nums[begin];
-        while(begin!=p){
-            count++;
-            p = nums[p];
-        }
-        return count;
     }
 
     public static void main(String[] args) {
