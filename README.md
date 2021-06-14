@@ -6,7 +6,7 @@
 
 TODO List:
 
-72,  650, 342, 693, 476, 371, 338, 190, 37, 785,  547, 279, 287, 257, 695, 127, 547, 216, 78, 93, 79, 77, 697, 766
+650, 342, 693, 476, 371, 338, 190, 37, 785,  547, 279, 287, 257, 695, 127, 547, 216, 78, 93, 79, 77, 697, 766
 
 
 
@@ -57,5 +57,6 @@ TODO List:
 | 43 | 583 | Delete Operation For Two Strings |  | DP | M | 1.5h | [two strings](https://leetcode.com/problems/delete-operation-for-two-strings/) |
 | 44 | 565 | Array Nesting | Brutal Force: 贪心策略，每个元素为起点统计set长度，只保留最长的len。Time Complexity O(n^2) | Array | M | 25m | [array nesting](https://leetcode.com/problems/array-nesting/) |
 | 45 | 328 | Odd Even Linked List |  | Linked List | M | 2h |  |
-| 46 |  |  | |  |  |  | |
+| 46 | 318 |  | | DP | M | 40m | |
+| 47 | 72 | Edit Distance | table的含义：dp(i)(j) word1的前i个字符，需要word2的前j个字符修改多少次才能相同； | DP | H | - | [edit distance](https://leetcode.com/problems/edit-distance/) |
 
