@@ -59,4 +59,5 @@ TODO List:
 | 45 | 328 | Odd Even Linked List |  | Linked List | M | 2h |  |
 | 46 | 318 |  | | DP | M | 40m | |
 | 47 | 72 | Edit Distance | table的含义：dp(i)(j) word1的前i个字符，需要word2的前j个字符修改多少次才能相同； | DP | H | - | [edit distance](https://leetcode.com/problems/edit-distance/) |
+| 48 | 77 | Combinations |  | Backtracking | M | 10m |  |
 
