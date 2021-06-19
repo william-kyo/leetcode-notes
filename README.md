@@ -60,4 +60,5 @@ TODO List:
 | 46 | 318 |  | | DP | M | 40m | |
 | 47 | 72 | Edit Distance | table的含义：dp(i)(j) word1的前i个字符，需要word2的前j个字符修改多少次才能相同； | DP | H | - | [edit distance](https://leetcode.com/problems/edit-distance/) |
 | 48 | 77 | Combinations |  | Backtracking | M | 10m |  |
+| 49 | 19 | Remove Nth Node From End | 方式一： 计数法； 方式二：递归计数，定位n+1 个节点，然后删除操作 | Linked List | M | 20m | [remove nth node](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/) |
 
