@@ -6,7 +6,7 @@
 
 TODO List:
 
-650, 342, 693, 476, 371, 338, 190, 37, 785,  547, 279, 287, 257, 695, 127, 547, 216, 93, 79, 697, 766
+278, 34, 153, 650, 342, 693, 476, 371, 338, 190, 37, 785,  547, 279, 287, 257, 695, 127, 547, 216, 697, 766
 
 
 
@@ -62,4 +62,5 @@ TODO List:
 | 48 | 77 | Combinations |  | Backtracking | M | 10m |  |
 | 49 | 19 | Remove Nth Node From End | 方式一： 计数法； 方式二：递归计数，定位n+1 个节点，然后删除操作 | Linked List | M | 20m | [remove nth node](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/) |
 | 50 | 78 | Subset | topic 提示之后才写出 | Backtracking | M | 40m | [subset](https://leetcode.com/problems/subsets/) |
+| 51 | 387 | Find the Duplicate Number |  | Binary Search | M |  | [find duplicate](https://leetcode.com/problems/find-the-duplicate-number/) |
 
