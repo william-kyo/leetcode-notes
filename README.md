@@ -1,12 +1,14 @@
 # LeetCode Notes
 
-算法是不可能在短时间就能突破的，只有持续不断的练习、思考。一开始我是不想刷题的，觉得刷题是“做题家”的行为，不够cool，这个错误的观点让我一直无法提高算法的功底。我工作的前三年就学完了常见的数据结构和算法，水平也仅仅是能够说出算法和数据结构的名字、使用场景。后来我发现“鄙视刷题”只是我的Imposter Syndrome，算法并不是要求我要去发明新的东西，而是需要去理解、练习。刷题就是一种高效率的学习方式
+算法是不可能在短时间就能突破的，只有持续不断的练习、思考。一开始我是不想刷题的，觉得刷题是“做题家”的行为，不够cool，这个错误的观点让我一直无法提高算法的功底。我工作的前三年就学完了常见的数据结构和算法，水平也仅仅是能够说出算法和数据结构的名字、使用场景。后来我发现“鄙视刷题”只是我的Imposter Syndrome，算法并不是要求我要去发明新的东西，而是需要去理解、练习。刷题就是一种高效率的学习方式。
+
+我的刷题road map分为两个阶段，第一个阶段是把所有种类的题目都刷一遍，第二阶段是在规定的时间内刷题。第一阶段大概是100题，第二阶段也是100题左右。
 
 
 
 TODO List:
 
-153, 650, 342, 693, 476, 371, 338, 190, 37, 785,  547, 279, 287, 257, 695, 127, 547, 216, 697, 766
+650, 342, 693, 476, 371, 338, 190, 37, 785,  547, 279, 287, 257, 695, 547, 216, 697, 766
 
 
 
@@ -56,11 +58,13 @@ TODO List:
 | 42 | 47 | Permutations II |  | Backtracking | M | 25m | [permutations II](https://leetcode.com/problems/permutations-ii/) |
 | 43 | 583 | Delete Operation For Two Strings |  | DP | M | 1.5h | [two strings](https://leetcode.com/problems/delete-operation-for-two-strings/) |
 | 44 | 565 | Array Nesting | Brutal Force: 贪心策略，每个元素为起点统计set长度，只保留最长的len。Time Complexity O(n^2) | Array | M | 25m | [array nesting](https://leetcode.com/problems/array-nesting/) |
-| 45 | 328 | Odd Even Linked List |  | Linked List | M | 2h |  |
+| 45 | 328 | Odd Even Linked List |  | Linked List | M | 2h | [odd even list](https://leetcode.com/problems/odd-even-linked-list/) |
 | 46 | 318 |  | | DP | M | 40m | |
 | 47 | 72 | Edit Distance | table的含义：dp(i)(j) word1的前i个字符，需要word2的前j个字符修改多少次才能相同； | DP | H | - | [edit distance](https://leetcode.com/problems/edit-distance/) |
 | 48 | 77 | Combinations |  | Backtracking | M | 10m |  |
 | 49 | 19 | Remove Nth Node From End | 方式一： 计数法； 方式二：递归计数，定位n+1 个节点，然后删除操作 | Linked List | M | 20m | [remove nth node](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/) |
 | 50 | 78 | Subset | topic 提示之后才写出 | Backtracking | M | 40m | [subset](https://leetcode.com/problems/subsets/) |
 | 51 | 387 | Find the Duplicate Number |  | Binary Search | M | - | [find duplicate](https://leetcode.com/problems/find-the-duplicate-number/) |
+| 52 | 127 |  |  |  |  |  |  |
+| 53 | 153 | Find Minimum in Rotated Sorted Array |  | Binary Search | M | 40m | [rotated sorted array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
 

@@ -33,6 +33,8 @@ public class FindRangeInSortedArray {
     }
 
     public static void main(String[] args) {
+        int i = 2;
+        System.out.println((i & 1) == 0);
         int[] nums;
         int target;
         int[] expected, actual;
