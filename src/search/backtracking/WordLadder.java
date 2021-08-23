@@ -3,13 +3,27 @@ package search.backtracking;
 import org.junit.Assert;
 import utils.ArrayConvert;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
+/**
+ * exceed time limit
+ */
 public class WordLadder {
+    private Map<String,Set<String>> adjacentMap = new HashMap<>();
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        adjacentMap.put(beginWord, new HashSet<>());
+        // adjacent map
+        for(String s : wordList){
+            adjacentMap.put(s, new HashSet<>());
+            if(adjacent(beginWord, s)){
+                adjacentMap.get(beginWord).add(s);
+            }
+            for(String w : wordList){
+                if(adjacent(s, w)){
+                    adjacentMap.get(s).add(w);
+                }
+            }
+        }
         List<Set<String>> ret = new ArrayList<>();
         List<String> list = new ArrayList<>();
         list.add(beginWord);
@@ -22,6 +36,9 @@ public class WordLadder {
             if(s.size()>1){
                 shortest = Math.min(shortest, s.size());
             }
+        }
+        if(shortest==Integer.MAX_VALUE){
+            return 0;
         }
         return shortest;
     }
@@ -42,20 +59,24 @@ public class WordLadder {
         }
     }
 
-    private boolean adjacent(Set<String> set, String w1, String w2){
-        if(set.contains(w2)){
+    private boolean adjacent(Set<String> set, String s, String w){
+        if(set.contains(w)){
             return false;
         }
-        if(w1.length()!=w2.length()){
+        if(s.length()!=w.length()){
             return false;
         }
+        return adjacentMap.getOrDefault(s, new HashSet<>()).contains(w);
+    }
+
+    private boolean adjacent(String s, String w){
         int differentScore = 0;
-        for(int i=0; i<w1.length(); i++){
-            if(w1.charAt(i)!=w2.charAt(i)){
+        for(int i=0; i<w.length(); i++){
+            if(s.charAt(i)!=w.charAt(i)){
                 differentScore++;
             }
         }
-        return differentScore==1;
+        return differentScore == 1;
     }
 
     public static void main(String[] args) {
