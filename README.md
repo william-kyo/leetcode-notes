@@ -8,7 +8,7 @@
 
 TODO List:
 
-342, 693, 476, 371, 338, 190, 37, 785,  547, 279, 287, 257, 695, 547, 216, 697, 766
+693, 547, 257, 697, 766
 
 
 
@@ -68,4 +68,11 @@ TODO List:
 | 52 | 127 | Word Ladder |  | BFS | H |  |  |
 | 53 | 153 | Find Minimum in Rotated Sorted Array |  | Binary Search | M | 40m | [rotated sorted array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
 | 54 | 650 | 2 keys keyboard | 1.  识别动态规划：可分解为最小问题，并且解的相关性； 2. 写不出规律是，可以从小到大，依次推导，发现规律 | DP | M | - | [keyboard](https://leetcode.com/problems/2-keys-keyboard/) |
+| 55 | 342 | Power of four |  | Bit Manipulation | E | - |  |
+| 56 | 476 |  | | Bit |  |  | |
+| 57 | 371 |  | | Bit |  |  | |
+| 58 | 338 |  | | Bit |  |  | |
+| 59 | 287 |  | | Bit |  |  | |
+| 60 | 279 |  | | DP |  |  | |
+| 61 | 695 |  | |  |  |  | |
 
