@@ -1,4 +1,4 @@
-package bit.move;
+package bit.manipulate;
 
 import org.junit.Assert;
 
