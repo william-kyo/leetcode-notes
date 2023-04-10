@@ -24,4 +24,10 @@ public class MyArrayUtil {
         }
     }
 
+    public static void printArray(int[] array) {
+        for (int a : array) {
+            System.out.print(a + ", ");
+        }
+        System.out.println();
+    }
 }

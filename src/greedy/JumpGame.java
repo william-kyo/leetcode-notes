@@ -1,6 +1,5 @@
 package greedy;
 
-import com.sun.jmx.snmp.BerEncoder;
 import org.junit.Assert;
 
 public class JumpGame {
